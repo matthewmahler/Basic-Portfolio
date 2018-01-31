@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-color: #eee;
+  background-color: rgb(51, 51, 51);
 }
 
 h1 {
@@ -12,9 +12,8 @@ h1 {
 
 h2 {
   font-family: 'Georgia', Times, "Times New Roman", serif;
-  padding: 10px;
   text-align: center;
-  width: 20%;
+  width: 30%;
   color: #4aaaa5;
 }
 
@@ -37,19 +36,31 @@ li a {
 
 header {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #red;
   border-color: #cccccc;
   display: block;
   margin: auto;
   border: solid #cccccc 5px;
   width: auto;
+  background: white;
+  padding: 0;
+ 
 }
 
 footer {
   text-align: center;
   padding: 20px;
   background-color: #666666;
+  border-top: #4aaaa5 solid 5px;
   color: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#logo {
+  border: solid #cccccc;
+  border-width: 0 5px 0 5px;
 }
 
 #logo h1 a,
@@ -99,18 +110,24 @@ h1 a:hover {
   margin: 0 auto;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 125%;
-  background-color: #ffffff;
+  background-color: #eee;
   color: #777777;
 }
 
 #main {
-  width: 960px;
+  width: 66%;
+  float: left;
   background-color: #ffffff;
 }
 
+#social {
+  width: 30%;
+  background-color: #ffffff;
+  float: right;
+}
+
 #about {
-  width: 900px;
-  padding: 0 30px;
+  padding: 0 30px 20px;
 }
 
 #profile {
@@ -118,17 +135,13 @@ h1 a:hover {
   float: left;
 }
 
-#header {
-  background: #eee;
-  margin: 0;
-  padding: 0;
-}
+
 
 #header-inner {
   margin: 0 auto;
   padding: 00px;
   width: 960px;
-  background: #eee;
+  background: white;
 }
 
 #logo {
@@ -136,6 +149,21 @@ h1 a:hover {
   width: auto;
   float: left;
   background-color: #4aaaa5;
+}
+
+#connect {
+  width: auto;
+  padding: 0 10px;
+}
+
+#icons {
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+
+.icons {
+  padding: 10px;
 }
 
 .clr {
